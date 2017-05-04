@@ -236,7 +236,7 @@ $("ul").on('click', 'li', function () {
       res = response;
        console.log(response);
        $('#tutorpicker').find('option').remove();
-       tutorEmails = response["query"]["results"]["json"];
+       tutorEmails = response["query"]["results"]["json"]["json"];
        tutorEmails.unshift("Select a tutor");
        for (i = 0; i < tutorEmails.length; i++) { 
         var a = document.getElementById("tutorpicker");
