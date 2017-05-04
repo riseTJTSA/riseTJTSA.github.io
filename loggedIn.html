@@ -210,46 +210,29 @@ $("ul").on('click', 'li', function () {
     var yql_url = 'https://query.yahooapis.com/v1/public/yql/';
     var url = encodeURI('http://rise-api.herokuapp.com/tutor?subject='+selectedSubject+'&tutee_address='+loc.replace(" ", "%"));
     console.log(url);
-    // $.ajax({
-    // 'url': yql_url,
-    // 'data': {
-    // 'q': 'SELECT * FROM json WHERE url="'+url+'"',
-    // 'format': 'json',
-    // 'jsonCompat': 'new',
-    //  },
-    // 'dataType': 'jsonp',
+    $.ajax({
+    'url': yql_url,
+    'data': {
+    'q': 'SELECT * FROM json WHERE url="'+url+'"',
+    'format': 'json',
+    'jsonCompat': 'new',
+     },
+    'dataType': 'jsonp',
 
-    // 'success': function(response) {
-    //   res = response;
-    //    console.log(response);
-    //    $('#tutorpicker').find('option').remove();
-    //    tutorEmails = response["query"]["results"]["json"];
-    //    tutorEmails.unshift("Select a tutor");
-    //    for (i = 0; i < tutorEmails.length; i++) { 
-    //     var a = document.getElementById("tutorpicker");
-    //     var option = document.createElement("option");
-    //     option.text = tutorEmails[i];
-    //     a.add(option);
-    //   }
-    // }
-    // });
-    var req = new XMLHttpRequest();
-
-// Feature detection for CORS
-if ('withCredentials' in req) {
-    req.open('GET', 'rise-api.herokuapp.com/tutor?subject=Geometry&tutee_address=6272%Gentle%Lane%Alexandria%VA', true);
-    // Just like regular ol' XHR
-    req.onreadystatechange = function() {
-        if (req.readyState === 4) {
-            if (req.status >= 200 && req.status < 400) {
-                // JSON.parse(req.responseText) etc.
-            } else {
-                // Handle error case
-            }
-        }
-    };
-    req.send();
-}
+    'success': function(response) {
+      res = response;
+       console.log(response);
+       $('#tutorpicker').find('option').remove();
+       tutorEmails = response["query"]["results"]["json"];
+       tutorEmails.unshift("Select a tutor");
+       for (i = 0; i < tutorEmails.length; i++) { 
+        var a = document.getElementById("tutorpicker");
+        var option = document.createElement("option");
+        option.text = tutorEmails[i];
+        a.add(option);
+      }
+    }
+    });
 
     document.getElementById("tutoravail").style.visibility = "visible";
     $('#tutorpicker').on('change', function(){
