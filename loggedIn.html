@@ -208,7 +208,7 @@ $("ul").on('click', 'li', function () {
    writeUserData(userId.replace(".","-"), loc);
    var tutorPickerElement = document.getElementById("tutorpicker");
     var yql_url = 'https://query.yahooapis.com/v1/public/yql/';
-    var url = encodeURI('http://rise-api.herokuapp.com/tutor?subject='+selectedSubject+'&tutee_address='+loc.replace(" ", "%"));
+    var url = encodeURI('https://rise-api.herokuapp.com/tutor?subject='+selectedSubject+'&tutee_address='+loc.replace(" ", "%"));
     console.log(url);
     $.getJSON(url, function(response){
         res = response;
