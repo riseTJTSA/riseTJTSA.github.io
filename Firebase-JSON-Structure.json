@@ -1,0 +1,90 @@
+{
+  "students" : {
+    "student1@gmail-com" : {
+      "email" : "student1@gmail.com",
+      "location" : "13618 McLearen Road",
+      "name" : "Student1",
+      "type" : "Student"
+    },
+    "student2@gmail-com" : {
+      "email" : "student2@gmail.com",
+      "location" : "13618 McLearen Road",
+      "name" : "Student2",
+      "type" : "Student"
+    }
+  },
+  "subjects-students" : {
+    "AP-Computer-Science" : [ "None" ],
+    "AP-US History" : [ "None" ],
+    "AP-US-History" : [ "None" ],
+    "Advanced Math" : [ "None" ],
+    "Advanced-Computer-Science" : [ "None" ],
+    "Algebra-1" : [ "None" ],
+    "Algebra-2" : [ "None" ],
+    "Artificial-Intelligence" : [ "None" ],
+    "Biology" : [ "None" ],
+    "Calculus-AB-and-BC" : [ "None" ],
+    "Chemistry" : [ "None" ],
+    "European-History" : [ "None" ],
+    "Foundations-of-Computer-Science" : [ "None" ],
+    "Geometry" : [ "None" ],
+    "Geosystems" : [ "None" ],
+    "Other-History" : [ "None" ],
+    "Physics" : [ "None" ],
+    "Precalculus" : [ "None" ],
+    "World-History" : [ "None" ]
+  },
+  "subjects-tutors" : {
+    "AP-Computer-Science" : [ "None" ],
+    "AP-US History" : [ "None" ],
+    "AP-US-History" : [ "None" ],
+    "Advanced Math" : [ "None" ],
+    "Advanced-Computer-Science" : [ "None" ],
+    "Algebra-1" : [ "None" ],
+    "Algebra-2" : [ "None" ],
+    "Artificial-Intelligence" : [ "None" ],
+    "Biology" : [ "None" ],
+    "Calculus-AB-and-BC" : [ "None" ],
+    "Chemistry" : [ "None" ],
+    "European-History" : [ "None" ],
+    "Foundations-of-Computer-Science" : [ "None" ],
+    "Geometry" : [ "None" ],
+    "Geosystems" : [ "None" ],
+    "Other-History" : [ "None" ],
+    "Physics" : [ "None" ],
+    "Precalculus" : [ "None" ],
+    "World-History" : [ "None" ]
+  },
+  "tutors" : {
+    "tutor2@gmail-com" : {
+      "email" : "tutor2@gmail.com",
+      "location" : "1234 Main Street",
+      "name" : "Tutor2",
+      "type" : "Tutor"
+    },
+    "tutor3@gmail-com" : {
+      "email" : "tutor3@gmail.com",
+      "location" : "5311 Maple Valley Ct Centreville VA 20120",
+      "name" : "Tutor3",
+      "type" : "Tutor"
+    },
+    "tutor4@gmail-com" : {
+      "email" : "tutor4@gmail.com",
+      "location" : "3203 Ravenscraig Ct, Herndon, VA 20171",
+      "name" : "Tutor4",
+      "type" : "Tutor"
+    },
+    "tutor5@gmail-com" : {
+      "email" : "tutor5@gmail.com",
+      "location" : "2713 Valestra Cir, Oakton, VA 22124",
+      "name" : "Tutor5",
+      "type" : "Tutor"
+    },
+    "tutor@gmail-com" : {
+      "email" : "tutor@gmail.com",
+      "location" : "123 Main Street",
+      "name" : "Tutor",
+      "type" : "Tutor"
+    }
+  }
+}

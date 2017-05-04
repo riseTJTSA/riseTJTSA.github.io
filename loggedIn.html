@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+    <title>RISE</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/spinner.css" rel="stylesheet" type="text/css">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <link href="css/creative.min_1.css" rel="stylesheet">
+    <link rel="shortcut icon" href="Main Page/launcher-icon-4x.png" type="image/x-icon">
+
+</head>
+
+<body id="page-top">
+
+   
+
+    <center>
+
+    <section class="bg-light" id="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col
+                -lg-offset-2 text-center">
+                    <h2 class="section-heading" id = "studentNameHeader"> Welcome !</h2>
+                    <hr class="primary">
+                    <h3 class="text-muted" id ="ineedatutor">I need a tutor in 
+                        <select class="selectpicker" data-live-search="true" multiple title="Select a subject" multiple data-max-options="1" id= "subjectPicker" >
+                          <optgroup label="Math" >
+                            <option data-tokens="math, algebra 1">Algebra 1</option>
+                            <option data-tokens="math ,geometry">Geometry</option>
+                            <option data-tokens="math, algebra 2">Algebra 2</option>
+                            <option data-tokens="math, Precalculus">Precalculus</option>
+                            <option data-tokens="math, Calculus, Calculus AB, Calculus BC">Calculus AB and BC</option>
+                            <option data-tokens="math, advanced math, multi, multivariable calculus">Advanced Math</option>
+                          </optgroup>
+                          <optgroup label="Science" >
+                            <option data-tokens="science, bio, biology">Biology</option>
+                            <option data-tokens="science, chem, chemistry">Chemistry</option>
+                            <option data-tokens="science, physics">Physics</option>
+                            <option data-tokens="science, geo, geosystems">Geosystems</option>
+                          </optgroup>
+                          <optgroup label="Computer Science" >
+                            <option data-tokens="Computer Science, cs, foundations of Computer Science">Foundations of Computer Science</option>
+                            <option data-tokens="Computer Science, cs, AP Computer Science, APCS">AP Computer Science</option>
+                            <option data-tokens="Computer Science, cs, AI, Aritifical Intelligence">Artificial Intelligence</option>
+                            <option data-tokens="Computer Science, cs, advanced computer science, parallel computing, computer vision">Advanced Computer Science</option>
+                          </optgroup>
+                          <optgroup label="Humanities" >
+                            <option data-tokens="Humanities, hum, World History">World History</option>
+                            <option data-tokens="Humanities, hum, AP US History, APUSH">AP US History</option>
+                            <option data-tokens="Humanities, hum, European History">European History</option>
+                            <option data-tokens="Humanities, hum, other history courses">Other History</option>
+                          </optgroup>
+                        </select>.
+                    </h3>
+                    
+
+
+
+
+<h3 class="text-muted" id="tutoravail" style="visibility: hidden;"> I would like to be tutored by 
+<select class=".selectpicker" data-live-search="true" title="Select a tutor" data-max-options="1" id= "tutorpicker">
+</select>.
+</h3>
+
+
+
+<h3 class="text-muted" id ="locationsAvail" style="visibility:hidden;"">I would like to be tutored at 
+   <select class=".selectpicker" data-live-search="true" multiple title="Select a location" multiple data-max-options="1" id= "locpicker">
+  
+</select>.
+</h3>
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    </center>
+    <div id="myNav" class="overlay">
+  <div class="overlay-content">
+  <h1 class="findingatutor" id="loadingScreen">RISE is finding a tutor near you</h1>
+   <div class="spinner" id="loading"></div>
+  </div>
+</div>
+
+
+
+
+
+   <footer class="footer">
+      <div class="container">
+      <center>
+        <p class="text-muted">&copy; 2017 TJHSST TSA	</p>
+        </center>
+      </div>
+    </footer>
+    <!-- <script src="StudentLogin.js"></script> -->
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/i18n/defaults-*.min.js"></script>
+
+<script>
+ var userId = "NOT A VALID USER";
+//   // Initialize Firebase
+   var config = {
+    apiKey: "AIzaSyC54QaF7lPx-tYYARGNXWlpD6EmZp2cXXk",
+    authDomain: "rise-student.firebaseapp.com",
+    databaseURL: "https://rise-student.firebaseio.com",
+    projectId: "rise-student",
+    storageBucket: "rise-student.appspot.com",
+    messagingSenderId: "936274072255"
+  };
+  var selectedSubject = "NONE";
+  var selectedTutor = "NONE";
+  var selectedLocation = "NONE";
+  firebase.initializeApp(config);
+  const auth = firebase.auth();
+  var database = firebase.database();
+  var userId = "abcdef";
+  var email2 = "";
+  var loc = "none";
+  auth.onAuthStateChanged(firebaseUser => {
+    if (firebaseUser){
+        userId = auth.currentUser["email"];
+        console.log(auth["currentUser"]["email"]);
+        email2 = userId.replace(".", "-");
+        database.ref('/students/' + email2).once('value').then(function(snapshot) {
+            var username = snapshot.val()["name"];
+            console.log(username);
+            loc = snapshot.val()["location"];
+            $("#studentNameHeader").html("Welcome " + username + "!"); 
+
+        });
+    }
+    else{
+        console.log("no one is logged on");
+        $("ineedatutor").html("You must log in. Please visit the RISE home page!");
+        //window.location.href ="index.html";
+    }
+
+  });
+
+  var x = "none";
+  var tutorEmails = [];
+  var tutorNames = [];
+  var select = "";
+  var res = "";
+$(function() {
+
+  var change = function( txt ) {
+        $("#ID").append( '<li>' + txt + '</li>' );
+    };
+    change("this is the first change");
+    change("this is the second change");
+
+
+
+$("ul").on('click', 'li', function () {
+   var id = this.id;
+   //play with the id
+});
+
+
+
+  $('#subjectPicker').on('change', function(){
+    selectedSubject = $(this).find("option:selected").val();
+   console.log(email2);
+   writeUserData(userId.replace(".","-"), loc);
+   var tutorPickerElement = document.getElementById("tutorpicker");
+    var yql_url = 'https://query.yahooapis.com/v1/public/yql/';
+    var url = encodeURI('http://rise-api.herokuapp.com/tutor?subject='+selectedSubject+'&tutee_address='+loc.replace(" ", "%"));
+    console.log(url);
+    // $.ajax({
+    // 'url': yql_url,
+    // 'data': {
+    // 'q': 'SELECT * FROM json WHERE url="'+url+'"',
+    // 'format': 'json',
+    // 'jsonCompat': 'new',
+    //  },
+    // 'dataType': 'jsonp',
+
+    // 'success': function(response) {
+    //   res = response;
+    //    console.log(response);
+    //    $('#tutorpicker').find('option').remove();
+    //    tutorEmails = response["query"]["results"]["json"];
+    //    tutorEmails.unshift("Select a tutor");
+    //    for (i = 0; i < tutorEmails.length; i++) { 
+    //     var a = document.getElementById("tutorpicker");
+    //     var option = document.createElement("option");
+    //     option.text = tutorEmails[i];
+    //     a.add(option);
+    //   }
+    // }
+    // });
+    var req = new XMLHttpRequest();
+
+// Feature detection for CORS
+if ('withCredentials' in req) {
+    req.open('GET', 'rise-api.herokuapp.com/tutor?subject=Geometry&tutee_address=6272%Gentle%Lane%Alexandria%VA', true);
+    // Just like regular ol' XHR
+    req.onreadystatechange = function() {
+        if (req.readyState === 4) {
+            if (req.status >= 200 && req.status < 400) {
+                // JSON.parse(req.responseText) etc.
+            } else {
+                // Handle error case
+            }
+        }
+    };
+    req.send();
+}
+
+    document.getElementById("tutoravail").style.visibility = "visible";
+    $('#tutorpicker').on('change', function(){
+          selectedTutor = $(this).find("option:selected").val();
+          console.log(selectedTutor);
+          database.ref('/tutors/' + selectedTutor).once('value').then(function(snapshot) {
+            var tutorLoc = snapshot.val()["tutorloc"];
+            console.log(tutorLoc);
+            var a = document.getElementById("locpicker");
+            var option = document.createElement("option");
+            option.text = "Select a location";
+            a.add(option);
+            var option = document.createElement("option");
+            option.text = tutorLoc;
+            a.add(option);
+                document.getElementById("locationsAvail").style.visibility = "visible";
+        });
+
+
+    });
+      });
+  
+});
+
+function writeUserData(email2, loc) {
+  database.ref('/subjects-students/' + selectedSubject.replace(" ", "-")).set({
+    email : email2
+  });
+}
+
+
+</script>
+</body>
+
+</html>

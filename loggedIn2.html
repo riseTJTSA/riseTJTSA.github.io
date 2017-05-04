@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RISE</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/slidingswitch.css" rel="stylesheet" type="text/css">
+    <link href="css/spinner.css" rel="stylesheet" type="text/css">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <link href="css/creative.min_2.css" rel="stylesheet">
+    <link rel="shortcut icon" href="Main Page/launcher-icon-4x.png" type="image/x-icon">
+
+</head>
+
+<body id="page-top"> <!-- 
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><b>RISE</b></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                        <a class="page-scroll" data-toggle="modal" data-target="#studentselect">Change Available Times</a>
+                    </li>
+                </ul>
+            </div>
+        
+        </div>
+        
+    </nav> -->
+
+
+    <div class="modal fade" id="studentlogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">Tutor Change Available Times</h4>
+            </div> <!-- /.modal-header -->
+
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="MondayStart" placeholder="Monday Start Time">
+                            <label for="MondayStart" class="input-group-addon glyphicon glyphicon-user"></label>
+                        </div>
+                    </div> <!-- /.form-group -->
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="pwdStudentLogin" placeholder="Password">
+                            <label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+                        </div> <!-- /.input-group -->
+                    </div> <!-- /.form-group -->
+                </form>
+
+            </div> <!-- /.modal-body -->
+
+            <div class="modal-footer">
+                <button class="form-control btn btn-primary" id="studentloginB">Login</button>
+
+                
+            </div> <!-- /.modal-footer -->
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+    <section class="bg-light" id="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading" id = "studentNameHeader"> Welcome !</h2>
+                    <hr class="primary">
+                    <h3 class="text-muted" id ="ineedatutor">I would like to tutor someone in  
+                        <select class="selectpicker" data-live-search="true" multiple title="Select a subject" multiple data-max-options="1" id= "subjectPicker">
+  <optgroup label="Math" >
+    <option data-tokens="math, algebra 1">Algebra 1</option>
+    <option data-tokens="math ,geometry">Geometry</option>
+    <option data-tokens="math, algebra 2">Algebra 2</option>
+    <option data-tokens="math, Precalculus">Precalculus</option>
+    <option data-tokens="math, Calculus, Calculus AB, Calculus BC">Calculus AB and BC</option>
+    <option data-tokens="math, advanced math, multi, multivariable calculus">Advanced Math</option>
+  </optgroup>
+  <optgroup label="Science" >
+    <option data-tokens="science, bio, biology">Biology</option>
+    <option data-tokens="science, chem, chemistry">Chemistry</option>
+    <option data-tokens="science, physics">Physics</option>
+    <option data-tokens="science, geo, geosystems">Geosystems</option>
+  </optgroup>
+  <optgroup label="Computer Science" >
+    <option data-tokens="Computer Science, cs, foundations of Computer Science">Foundations of Computer Science</option>
+    <option data-tokens="Computer Science, cs, AP Computer Science, APCS">AP Computer Science</option>
+    <option data-tokens="Computer Science, cs, AI, Aritifical Intelligence">Artificial Intelligence</option>
+    <option data-tokens="Computer Science, cs, advanced computer science, parallel computing, computer vision">Advanced Computer Science</option>
+  </optgroup>
+  <optgroup label="Humanities" >
+    <option data-tokens="Humanities, hum, World History">World History</option>
+    <option data-tokens="Humanities, hum, AP US History, APUSH">AP US History</option>
+    <option data-tokens="Humanities, hum, European History">European History</option>
+    <option data-tokens="Humanities, hum, other history courses">Other History Cources</option>
+  </optgroup>
+</select>
+                    </h3>
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div id="myNav" class="overlay">
+  <div class="overlay-content">
+  <h1 class="findingatutor" id="loadingScreen">RISE is finding students near you that would like to be tutored in</h1>
+   <div class="spinner" id="loading"></div>
+     <h1 class="findingatutor">You may now close this window. <br/>We will notify you via email once we have found a student.</h1>
+
+  </div>
+</div>
+
+
+   <footer class="footer">
+      <div class="container">
+      <center>
+        <p class="text-muted">&copy; 2017 TJHSST TSA	</p>
+        </center>
+      </div>
+    </footer>
+    <!-- <script src="StudentLogin.js"></script> -->
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/i18n/defaults-*.min.js"></script>
+
+<script>
+var userId = "NOT A VALID USER";
+//   // Initialize Firebase
+   var config = {
+    apiKey: "AIzaSyC54QaF7lPx-tYYARGNXWlpD6EmZp2cXXk",
+    authDomain: "rise-student.firebaseapp.com",
+    databaseURL: "https://rise-student.firebaseio.com",
+    projectId: "rise-student",
+    storageBucket: "rise-student.appspot.com",
+    messagingSenderId: "936274072255"
+  };
+  var selectedText = "NONE";
+  firebase.initializeApp(config);
+  const auth = firebase.auth();
+  var database = firebase.database();
+  var userId = "abcdef";
+  var email2 = "";
+  var loc = "none";
+  auth.onAuthStateChanged(firebaseUser => {
+    if (firebaseUser){
+        userId = auth.currentUser["email"];
+        console.log(auth["currentUser"]["email"]);
+        email2 = userId.replace(".", "-");
+        database.ref('/tutors/' + email2).once('value').then(function(snapshot) {
+            var username = snapshot.val()["name"];
+            console.log(username);
+            loc = snapshot.val()["location"];
+            $("#studentNameHeader").html("Welcome " + username + "!"); 
+
+        });
+    }
+    else{
+        console.log("no one is logged on");
+        $("ineedatutor").html("You must log in. Please visit the RISE home page!");
+        //window.location.href ="index.html";
+    }
+
+  });
+
+  $(function() {
+
+  $('.selectpicker').on('change', function(){
+    selectedText = $(this).find("option:selected").val();
+   document.getElementById("loading").style.display = "flex";
+   document.getElementById("myNav").style.width = "100%";
+   document.getElementById("section").style.display = "none";
+   $("#loadingScreen").html("RISE is finding a student for you to tutor in " +  selectedText + " near you.");
+   console.log(email2);
+   writeUserData(userId.replace(".","-"), loc);
+  });
+  
+});
+
+function writeUserData(email2, loc) {
+  database.ref('/subjects-tutors/' + selectedText.replace(" ", "-") +"/" + email2).set({
+    location:loc
+  });
+}
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RISE</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <link href="css/creative.min_1.css" rel="stylesheet">
+    <link rel="shortcut icon" href="Main Page/launcher-icon-4x.png" type="image/x-icon">
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><b>RISE</b></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                	<li>
+                        <a class="page-scroll" href="#what">What is Rise?</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="" data-toggle="modal" data-target="#studentselect">Student</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="" data-toggle="modal" data-target="#tutorSelect">Tutor</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Rise</h1>
+                <hr>
+                <p>Connecting Students with Tutors seamlessly</p>
+                <a href="#what" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-light" id="what">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">What is RISE?</h2>
+                    <hr class="primary">
+                    <p class="text-muted">Rise is an online platform to connect students and tutors together.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--TUTOR SELECTION-->
+<div class="modal fade" id="studentselect" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel"><b><center>Student</center></b></h4>
+            </div> <!-- /.modal-header -->
+
+            <div class="modal-body">
+                <center><button class="btn btn-primary" data-toggle="modal" data-target="#studentlogin">Login</button>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#studentregister">Register</button></center>
+            </div> <!-- /.modal-body -->
+
+            
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--TUTOR SELECTION-->
+<div class="modal fade" id="tutorSelect" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel"><b><center>Tutor</center></b></h4>
+            </div> <!-- /.modal-header -->
+
+            <div class="modal-body">
+                <center><button class="btn btn-primary" data-toggle="modal" data-target="#tutorlogin">Login</button>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#tutorregister">Register</button></center>
+            </div> <!-- /.modal-body -->
+
+            
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- STUDENT LOGIN AND REGISTRATION -->
+<div class="modal fade" id="studentlogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">Student Log in</h4>
+            </div> <!-- /.modal-header -->
+
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="emailStudentLogin" placeholder="Email Address">
+                            <label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+                        </div>
+                    </div> <!-- /.form-group -->
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="pwdStudentLogin" placeholder="Password">
+                            <label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+                        </div> <!-- /.input-group -->
+                    </div> <!-- /.form-group -->
+                </form>
+
+            </div> <!-- /.modal-body -->
+
+            <div class="modal-footer">
+                <button class="form-control btn btn-primary" id="studentloginB">Login</button>
+
+                
+            </div> <!-- /.modal-footer -->
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade" id="studentregister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">Student Register</h4>
+            </div> <!-- /.modal-header -->
+
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="nameStudentRegister" placeholder="Name">
+                            <label for="name" class="input-group-addon glyphicon glyphicon-user"></label>
+                        </div>
+                    </div> <!-- /.form-group -->
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="emailStudentRegister" placeholder="Email">
+                            <label for="email" class="input-group-addon glyphicon glyphicon-envelope"></label>
+                        </div>
+                    </div> 
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="locStudentRegister" placeholder="Home Address">
+                            <label for="location" class="input-group-addon glyphicon glyphicon-home"></label>
+                        </div>
+                    </div> 
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="pwdStudentRegister" placeholder="Password">
+                            <label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+                        </div> <!-- /.input-group -->
+                    </div> 
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="cpwdStudentRegister" placeholder="Confirm Password">
+                            <label for="confirm" class="input-group-addon glyphicon glyphicon-lock"></label>
+                        </div> <!-- /.input-group -->
+                    </div> 
+                    <!-- /.form-group -->
+                </form>
+
+            </div> <!-- /.modal-body -->
+
+            <div class="modal-footer">
+                <button class="form-control btn btn-primary" id="studentregisterB">Register</button>
+
+                
+            </div> <!-- /.modal-footer -->
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- TUTOR LOGIN AND REGISTRATION BELOW   -->
+<div class="modal fade" id="tutorlogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">Tutor Log in</h4>
+            </div> <!-- /.modal-header -->
+
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="tutoremaillogin" placeholder="Email Address">
+                            <label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+                        </div>
+                    </div> <!-- /.form-group -->
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="tutorpasswordlogin" placeholder="Password">
+                            <label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+                        </div> <!-- /.input-group -->
+                    </div> <!-- /.form-group -->
+                </form>
+
+            </div> <!-- /.modal-body -->
+
+            <div class="modal-footer">
+                <button class="form-control btn btn-primary" id="tutorloginB">Login</button>
+
+                
+            </div> <!-- /.modal-footer -->
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade" id="tutorregister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">Tutor Registration</h4>
+            </div> <!-- /.modal-header -->
+
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                            <label for="name" class="input-group-addon glyphicon glyphicon-user"></label>
+                        </div>
+                    </div> <!-- /.form-group -->
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="email" placeholder="Email">
+                            <label for="email" class="input-group-addon glyphicon glyphicon-envelope"></label>
+                        </div>
+                    </div> 
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="location" placeholder="Home Address">
+                            <label for="location" class="input-group-addon glyphicon glyphicon-home"></label>
+                        </div>
+                    </div> 
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="uPassword" placeholder="Password">
+                            <label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+                        </div> <!-- /.input-group -->
+                    </div> 
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="confirm" placeholder="Confirm Password">
+                            <label for="confirm" class="input-group-addon glyphicon glyphicon-lock"></label>
+                        </div> <!-- /.input-group -->
+                    </div> 
+
+                    <!-- <div class="form-group" id="locationsregister">
+                    <div class="radio">
+                          <label><input type="radio" name="optradio" id="studentHome">I am willing to tutor at the student's home.</label>
+                        </div>
+                    <div class="radio">
+                      <label><input type="radio" name="optradio" id="preferLocation">I would like to tutor at <input type="text" class="form-control" id="usr" style="visibility: hidden;"></label>
+                      
+                    </div>
+                    </div> -->
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="locationsregister" placeholder="Location of Tutoring (You may tutor at the student home) ">
+                            <label for="locationsregister" class="input-group-addon glyphicon glyphicon-home"></label>
+                        </div> <!-- /.input-group -->
+                    </div> 
+
+                    <!-- /.form-group -->
+                </form>
+
+            </div> <!-- /.modal-body -->
+
+            <div class="modal-footer">
+                <button class="form-control btn btn-primary" id="tutorregisterB">Register</button>
+
+                
+            </div> <!-- /.modal-footer -->
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+    
+   <footer class="footer">
+      <div class="container">
+      <center>
+        <p class="text-muted">&copy; 2017 TJHSST TSA	</p>
+        </center>
+      </div>
+    </footer>
+    <!-- <script src="StudentLogin.js"></script> -->
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script>
+$('#locationsregister').click(function() {
+   if($('#preferLocation').is(':checked')) { 
+
+    document.getElementById("usr").style.visibility = "visible";
+     }
+     if($('#studentHome').is(':checked')) { 
+
+    document.getElementById("usr").style.visibility = "hidden";
+     }
+});
+var userId = "NOT A VALID USER";
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC54QaF7lPx-tYYARGNXWlpD6EmZp2cXXk",
+    authDomain: "rise-student.firebaseapp.com",
+    databaseURL: "https://rise-student.firebaseio.com",
+    projectId: "rise-student",
+    storageBucket: "rise-student.appspot.com",
+    messagingSenderId: "936274072255"
+  };
+
+  firebase.initializeApp(config);
+  const auth = firebase.auth();
+    var database = firebase.database();
+    auth.signOut().then(function() {
+  console.log('Signed Out');
+}, function(error) {
+  console.error('Sign Out Error', error);
+});
+
+  $("#studentloginB").click(function(){
+        
+        var email = $("#emailStudentLogin").val();  
+        var password = $("#pwdStudentLogin").val();
+    auth.signInWithEmailAndPassword(email, password).then(function(user) {
+        window.location.href = "loggedIn.html";
+    });
+
+        
+    });
+
+  $("#studentregisterB").click(function(){
+
+    var email = $("#emailStudentRegister").val();  
+        var password = $("#pwdStudentRegister").val();
+        const promise = auth.createUserWithEmailAndPassword(email, password);
+        promise.catch(e => console.log(e.message));
+        writeUserData("0000", $("#nameStudentRegister").val(), $("#emailStudentRegister").val(), $("#locStudentRegister").val(), "Student");
+          console.log($("#nameStudentRegister").val());
+          console.log($("#emailStudentRegister").val());
+          console.log($("#locStudentRegister").val());
+
+  });
+        
+        
+
+
+ $("#tutorloginB").click(function(){
+        
+        var email = $("#tutoremaillogin").val();  
+        var password = $("#tutorpasswordlogin").val();
+    
+         auth.signInWithEmailAndPassword(email, password).then(function(user) {
+        window.location.href = "loggedIn2.html";
+    });
+    });
+
+  $("#tutorregisterB").click(function(){
+
+    var email = $("#email").val();  
+    var password = $("#uPassword").val();
+    const promise = auth.createUserWithEmailAndPassword(email, password).then(function(){
+            promise.catch(e => console.log(e.message));
+            writeUserData2(userId, $("#name").val(), $("#email").val(), $("#location").val(), $("#locationsregister").val(),"Tutor");
+            console.log($("#email").val());
+            console.log($("#location").val());
+            auth.signInWithEmailAndPassword(email, password).then(function(user) {
+            window.location.href = "loggedIn2.html";
+        });
+  });
+});
+
+
+function writeUserData(userID, name1, mexail1, address1, type1) {
+    var email2 = email1.replace(".", "-");
+    console.log(email2);
+  database.ref('/students/' + email2).set({
+    name: name1,
+    email: email1,
+    location:address1,
+    type:type1
+  });
+}
+
+function writeUserData2(userID, name1, email1, address1, tutorloc1, type1) {
+    var email2 = email1.replace(".", "-");
+    console.log(email2);
+  database.ref('/tutors/' + email2).set({
+    name: name1,
+    email: email1,
+    location:address1,
+    tutorloc:tutorloc1,
+    type:type1
+  });
+}
+
+</script>
+</body>
+
+</html>
